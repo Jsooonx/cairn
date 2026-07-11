@@ -12,6 +12,8 @@ the [MIT License](LICENSE).
 
 - Creates a small, project-local delivery baseline: `AGENTS.md`, workflow docs,
   and `.cairn.json`.
+- Provides an optional `docs/design-taste.md` reference for visual and motion
+  preferences.
 - Guides Codex toward scoped work, documentation, validation, and clean handoff.
 - Provides optional local-only project memory for Obsidian.
 - Keeps memory consent separate from normal project setup.
@@ -47,6 +49,18 @@ The choice is saved per project in `.cairn.json`; Cairn does not ask again.
 You can still use the workflow in natural language with `$cairn` or “Use Cairn
 to set up this project.” The slash command is the most predictable Codex entry
 point.
+
+## Design taste
+
+Cairn can create `docs/design-taste.md` as a project-local reference for visual
+direction, interaction preferences, motion principles, typography, spacing,
+and other design decisions. Codex can use it when implementing or reviewing UI
+so the project develops a consistent visual language over time.
+
+The included file is only a starter template, not a fixed Cairn rule. You are
+free to rewrite, expand, replace, or delete it. Different projects can have
+completely different design tastes, and the project's own `design-taste.md`
+always takes priority over Cairn's generic examples.
 
 ## Memory and Obsidian
 
