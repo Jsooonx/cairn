@@ -110,17 +110,38 @@ Ask Codex one of:
 Disabling stops future syncs. Removing deletes only Cairn's generated local
 vault; it does not touch source code or original agent transcripts.
 
-## Skill-only installation
+## Installation scope
 
-The workflow can also be installed without the plugin slash command through
-the Skills CLI:
+There are two ways to install the workflow skill. Run these commands in any
+terminal with Node.js available.
+
+### Global installation
+
+Use this when you want Cairn available across all projects for your user:
 
 ```powershell
-npx skills add <owner>/<repo> --skill cairn -g -a codex
+npx skills add https://github.com/Jsooonx/cairn/tree/main/skills/cairn -g -a codex -y
 ```
 
-Use `$cairn` after installation. The Skills CLI installs skill files only; the
-Codex plugin is what provides `/cairn`.
+After installation, start a new Codex thread and use `$cairn`.
+
+### Project-specific installation
+
+Use this when Cairn should be available only inside one project. Run the
+command from that project's root and omit `-g`:
+
+```powershell
+cd "<project-root>"
+npx skills add https://github.com/Jsooonx/cairn/tree/main/skills/cairn -a codex -y
+```
+
+This installs the skill into the project's agent skill directory rather than
+your global user directory. It is useful when a team wants the workflow
+versioned or enabled for only one repository.
+
+The Skills CLI installs skill files only. The Codex plugin is what provides the
+`/cairn` slash command; `$cairn` works with either global or project-specific
+skill installation.
 
 ## Manual setup
 
