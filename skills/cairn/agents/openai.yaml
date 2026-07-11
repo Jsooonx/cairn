@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cairn"
+  short_description: "Private project delivery for Codex"
+  default_prompt: "Use $cairn to set up this project safely."

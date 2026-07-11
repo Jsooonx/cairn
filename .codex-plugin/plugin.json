@@ -1,0 +1,18 @@
+{
+  "name": "cairn",
+  "version": "0.1.0",
+  "description": "A privacy-first project delivery workflow for Codex.",
+  "author": {
+    "name": "Jsooonx"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Cairn",
+    "shortDescription": "Private, reliable project delivery.",
+    "longDescription": "Cairn guides project setup, documentation, validation, and optional private local memory.",
+    "developerName": "Jsooonx",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": ["Start Cairn setup for this project.", "Set up private local project memory.", "Audit this project with Cairn."]
+  }
+}
