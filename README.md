@@ -127,7 +127,7 @@ Codex plugin is what provides `/cairn`.
 If you prefer direct control, run the bundled script from this package:
 
 ```powershell
-python scripts/setup_project.py "D:\path\to\project" --memory on-demand
+python scripts/setup_project.py "<project-root>" --memory on-demand
 ```
 
 Replace `on-demand` with `off` or `auto` as desired. Add
@@ -145,12 +145,4 @@ cairn/
 ├── templates/         # project-local docs and AGENTS.md templates
 ├── PRIVACY.md
 └── LICENSE
-```
-
-## Development checks
-
-```powershell
-python C:\Users\GIELANG\.codex\skills\.system\skill-creator\scripts\quick_validate.py .\skills\cairn
-python C:\Users\GIELANG\.codex\skills\.system\plugin-creator\scripts\validate_plugin.py .
-python -m py_compile scripts\setup_project.py scripts\sync_memory.py
 ```
